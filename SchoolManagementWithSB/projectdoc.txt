@@ -1,0 +1,93 @@
+	SchoolManagementSystem
+	---------------------
+	Model
+	------
+	Person
+	---------
+	->name
+	->age
+	->gender
+	->Contact no
+	->address
+	Student extends person
+	----------
+	->rollNo
+	->grade
+	->section
+	Employee extends person
+	------------
+	->emp id
+	->department
+	->salary
+	->join date
+	->designation		 
+	Teacher extends employee
+	------------------
+	specialization
+	
+	Staff extends Employee
+	---------------
+	 working type
+				 
+	EmployeeAttendance
+	-------------
+	->attendance id
+	->employee id
+	->entry date
+	->login time
+	->logout time
+	StudentsAccounts
+	--------
+	->roll no
+	->grade
+	->fee paid
+	->total fee
+	Service
+	------
+	Student Service:
+	functions:
+	->registration
+	->delete record
+	->Update grade
+	->Update section
+	->Update Name
+	->Update Age
+	->Update Address
+	->Update contact no
+	TeacherService:
+	functions:
+	->registration
+	->delete records
+	->login
+	->logout
+	->Update salary
+	->Update specialization
+	->Update Name
+	->Update age
+	->Update address
+	->Update contact no
+	StaffService:
+	functions:
+	->registration
+	->delete records
+	->Update salary
+	->Update Name
+	->Update age
+	->Update address
+	->Update contact no
+	StudentsAccounts Service:
+	functions:
+	->registerfeeStructure
+	->Update pay fee
+	AdminService
+	functions:
+	->view student details
+	->view Employee details
+	->view Employee Attendance by Date
+	->Employee Attendance by employee id
+	->view StudentsAccounts
+				
+				
+					
+					
+				
